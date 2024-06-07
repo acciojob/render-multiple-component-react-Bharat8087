@@ -1,15 +1,1 @@
-// cypress/integration/render-multiple-components.spec.js
 
-describe('Render Multiple Components', () => {
-  beforeEach(() => {
-    cy.visit('/');
-  });
-
-  it('should render project names with data-ns-test attribute', () => {
-    cy.get('[data-ns-test="project-name"]').should('have.length', 3); // Assuming 3 projects are rendered
-  });
-
-  it('should render project descriptions with data-ns-test attribute', () => {
-    cy.get('[data-ns-test="project-description"]').should('have.length', 3); // Assuming 3 projects are rendered
-  });
-});
